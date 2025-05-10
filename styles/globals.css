@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@theme {
+  --font-playfair: "Playfair Display", serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-great: "Great Vibes", serif;
+
+  --color-primary:#4CAF4F;
+  --color-secondary:#263238;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+.font-great {
+  font-family: var(--font-great);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
