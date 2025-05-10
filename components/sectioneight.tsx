@@ -44,7 +44,7 @@ const SectionEight = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className="relative w-[368px] flex flex-col items-center"
           >
-            <div className="w-[368px] h-[286px] relative rounded-[8px] overflow-hidden shadow transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1">
+            <div className="w-[368px] h-[286px] relative rounded-[8px] overflow-hidden shadow">
               <Image
                 src={item.image}
                 alt={`Post ${index + 1}`}

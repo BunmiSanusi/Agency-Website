@@ -15,7 +15,7 @@ const SectionSeven = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
-          className="md:col-span-2 flex justify-center md:justify-start max-h-[280px] transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1"
+          className="md:col-span-2 flex justify-center md:justify-start max-h-[280px] "
         >
           <Image
             src="/image.jpg"

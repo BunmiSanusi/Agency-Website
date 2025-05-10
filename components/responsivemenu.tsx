@@ -16,7 +16,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ open, onClose }) => {
           exit={{ opacity: 0, y: -100 }}
 
           
-          className="fixed top-20 left-0 w-full h-auto z-50"
+          className="fixed top-20 left-0 w-[350px] h-auto z-50"
         >
           <div
             className="text-xl font-normal bg-primary
@@ -29,7 +29,7 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ open, onClose }) => {
                 </Link>
               </li>
               <li onClick={onClose}>
-                <Link href="/about" className="">
+                <Link href="/service" className="">
                   Service
                 </Link>
               </li>

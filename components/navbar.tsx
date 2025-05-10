@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/logo.png"
+                src="/logooo.svg"
                 alt="Nexcent Logo"
                 width={120}
                 height={40}

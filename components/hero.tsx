@@ -41,7 +41,7 @@ const Hero = () => {
                 viewport={{ once: false }}
                 className="flex justify-center md:justify-start items-center gap-6"
               >
-                <Link href="/courses">
+                <Link href="/product">
                   <button className="flex justify-center items-center gap-2 bg-primary hover:bg-secondary text-white text-sm font-semibold py-4 px-6 rounded-md">
                     Register
                   </button>
@@ -55,10 +55,10 @@ const Hero = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
-            className="flex justify-center items-center transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1"
+            className="flex justify-center items-center "
           >
             <Image
-              src="/illustration.png"
+              src="/illustration.svg"
               alt="Hero Image"
               width={391}
               height={407}

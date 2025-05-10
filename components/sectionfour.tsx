@@ -14,7 +14,7 @@ const SectionFour = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
-          className="flex justify-center transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1"
+          className="flex justify-center "
         >
           <Image
             src="/Frame 35.png"

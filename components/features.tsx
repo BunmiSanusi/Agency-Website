@@ -32,7 +32,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              variants={SlideUp(0.5 + index * 0.2)}
+              variants={SlideUp(0.5)}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
