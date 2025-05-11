@@ -8,13 +8,13 @@ import { features } from "../utility/features";
 const Features = () => {
   return (
     <section className="bg-white py-10 px-4 md:px-8 lg:px-20">
-      <div className="max-w-6xl mx-auto text-center space-y-6">
+      <div className="max-w-6xl mx-auto text-center space-y-6 overflow-hidden">
         <motion.h2
           variants={SlideUp(0.2)}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false }}
-          className="text-2xl md:text-4xl font-semibold text-center lg:w-[522px] mx-auto"
+          className="text-3xl md:text-4xl font-semibold text-center lg:w-[522px] mx-auto"
         >
           Manage your entire community in a single system
         </motion.h2>

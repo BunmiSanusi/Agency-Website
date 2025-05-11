@@ -44,8 +44,8 @@ const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ open, onClose }) => {
                 </Link>
               </li>
               <li onClick={onClose}>
-                <Link href="/testimony" className="">
-                  Testimony
+                <Link href="/testimonial" className="">
+                  Testimonial
                 </Link>
               </li>
               <li onClick={onClose}>

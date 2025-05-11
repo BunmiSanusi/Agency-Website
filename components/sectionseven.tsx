@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../utility/animation";
 import { ArrowRight } from "lucide-react";
 import { logos } from "../utility/logos";
+import Link from "next/link";
 
 const SectionSeven = () => {
   return (
     <section className="bg-[#F5F7FA] py-16 px-4 md:px-8 lg:px-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center overflow-hidden">
         <motion.div
           variants={SlideLeft(0.3)}
           initial="hidden"
@@ -64,11 +65,12 @@ const SectionSeven = () => {
                 className="object-contain opacity-80"
               />
             ))}
-
-            <div className="flex items-center gap-1 text-primary font-medium cursor-pointer ml-2 mt-2 text-sm">
-              <span>Meet all customers</span>
-              <ArrowRight className="w-4 h-4" />
-            </div>
+            <Link href="/testimonial">
+              <div className="flex items-center gap-1 text-primary font-medium cursor-pointer ml-2 mt-2 text-sm">
+                <span>Meet all customers</span>
+                <ArrowRight className="w-4 h-4" />
+              </div>
+            </Link>
           </div>
         </motion.div>
       </div>

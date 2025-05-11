@@ -51,14 +51,14 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className=" py-1 px-3 text-primary hover:text-secondary font-medium text-xs hidden md:block ">
-              <Link href="/login">Login</Link>
+            <div className=" py-1 px-3 text-primary hover:text-secondary font-medium text-xs ">
+              <Link href="/product">Login</Link>
             </div>
-            <Link href="/sign">
+            <Link href="/product">
               <button
                 className="hover:bg-primary text-white text-xs
                   font-medium hover:text-white rounded-md border-2 bg-primary 
-                  px-6 py-2 duration-200 hidden md:block"
+                  px-6 py-2 duration-200 "
               >
                 Signup
               </button>

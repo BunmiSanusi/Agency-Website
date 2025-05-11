@@ -15,7 +15,7 @@ const stats = [
 const StatsSection = () => {
   return (
     <section className="bg-[#F5F7FA] py-16 px-4 md:px-8 lg:px-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 overflow-hidden">
         <motion.div
           variants={SlideLeft(0.3)}
           initial="hidden"

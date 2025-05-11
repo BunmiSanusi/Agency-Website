@@ -8,7 +8,7 @@ import { SlideLeft, SlideRight } from "../utility/animation";
 const SectionSix = () => {
   return (
     <section className="bg-white py-10 px-4 md:px-8 lg:px-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 overflow-hidden">
         <motion.div
           variants={SlideLeft(0.3)}
           initial="hidden"

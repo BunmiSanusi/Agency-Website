@@ -7,8 +7,8 @@ import { SlideLeft, SlideRight } from "../utility/animation";
 
 const Hero = () => {
   return (
-    <section className="bg-[#F5F7FA] ">
-      <div className="max-w-screen-xl mx-auto px-6 sm:px-6 lg:px-10 py-10 ">
+    <section className="bg-[#F5F7FA]">
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-6 lg:px-10 py-10 overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center min-h-[600px] gap-4 md:gap-8">
           <div className="flex flex-col font-poppins gap-8 w-full">
             <div className="text-center md:text-left space-y-6">
