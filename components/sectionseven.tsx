@@ -54,7 +54,7 @@ const SectionSeven = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-8 mt-6">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 mt-6">
             {logos.map((logo, index) => (
               <Image
                 key={index}
