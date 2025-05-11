@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../utility/animation";
 
 const stats = [
-  { icon: "/icon (7).png", label: "Members", value: 2245341 },
-  { icon: "/icon (1).png", label: "Clubs", value: 46328 },
-  { icon: "/icon (5).png", label: "Event Bookings", value: 828867 },
-  { icon: "/icon (6).png", label: "Payments", value: 1926436 },
+  { icon: "/Icon (7).png", label: "Members", value: 2245341 },
+  { icon: "/Icon (1).png", label: "Clubs", value: 46328 },
+  { icon: "/Icon (5).png", label: "Event Bookings", value: 828867 },
+  { icon: "/Icon (6).png", label: "Payments", value: 1926436 },
 ];
 
 const StatsSection = () => {
