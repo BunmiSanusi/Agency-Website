@@ -51,14 +51,14 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className=" py-1 px-3 text-primary hover:text-secondary font-medium text-xs ">
+            <div className=" py-1 px-3 text-primary hover:text-secondary font-medium text-xs hidden md:block ">
               <Link href="/product">Login</Link>
             </div>
             <Link href="/product">
               <button
                 className="hover:bg-primary text-white text-xs
                   font-medium hover:text-white rounded-md border-2 bg-primary 
-                  px-6 py-2 duration-200 "
+                  px-6 py-2 duration-200 hidden md:block "
               >
                 Signup
               </button>
@@ -74,7 +74,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Sidebar */}
+        {/* Responsive Sidebar */}
         <ResponsiveMenu open={open} onClose={handleMenuToggle} />
       </nav>
     </>
