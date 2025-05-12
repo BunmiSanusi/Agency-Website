@@ -3,68 +3,45 @@ import { motion, AnimatePresence } from "framer-motion";
 
 type ResponsiveMenuProps = {
   open: boolean;
-  onClose: () => void; 
+  onClose: () => void;
 };
 
 const ResponsiveMenu: React.FC<ResponsiveMenuProps> = ({ open, onClose }) => {
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       {open && (
         <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -100 }}
-
-          
-          className="absolute top-20 left-0 w-[300px] h-auto z-50"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 bg-transparent bg-opacity-40 flex justify-center items-start"
+          onClick={onClose}
         >
-          <div
-            className="text-xl font-normal bg-primary
-            text-white py-6 m-6 rounded-3xl"
+          <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -50, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={(e) => e.stopPropagation()}
+            className="bg-primary text-white w-11/12 max-w-sm mt-24 rounded-2xl p-6 mx-auto"
           >
-            <ul className="flex flex-col justify-center font-poppins text-[12px] items-center gap-4">
-              <li onClick={onClose}>
-                <Link href="/" className="">
-                  Home
-                </Link>
-              </li>
-              <li onClick={onClose}>
-                <Link href="/service" className="">
-                  Service
-                </Link>
-              </li>
-              <li onClick={onClose}>
-                <Link href="/feature" className="">
-                  Feature
-                </Link>
-              </li>
-              <li onClick={onClose}>
-                <Link href="/product" className="">
-                  Product
-                </Link>
-              </li>
-              <li onClick={onClose}>
-                <Link href="/testimonial" className="">
-                  Testimonial
-                </Link>
-              </li>
-              <li onClick={onClose}>
-                <Link href="/faq" className="">
-                  FAQ
-                </Link>
-              </li>
-               <li onClick={onClose}>
-                <Link href="/testimonial" className="">
-                  Login
-                </Link>
-              </li>
-               <li onClick={onClose}>
-                <Link href="/testimonial" className="">
-                  SignUp
-                </Link>
-              </li>
+            <ul className="flex flex-col items-center gap-5 text-sm">
+              {[
+                { label: "Home", href: "/" },
+                { label: "Service", href: "/service" },
+                { label: "Feature", href: "/feature" },
+                { label: "Product", href: "/product" },
+                { label: "Testimonial", href: "/testimonial" },
+                { label: "FAQ", href: "/faq" },
+                { label: "Login", href: "/login" },
+                { label: "Sign Up", href: "/signup" },
+              ].map((item, idx) => (
+                <li key={idx} onClick={onClose}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+              ))}
             </ul>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

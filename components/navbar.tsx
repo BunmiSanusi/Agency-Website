@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdClose } from "react-icons/md";
 import ResponsiveMenu from "../components/responsivemenu";
 
 const Navbar = () => {
@@ -13,7 +13,6 @@ const Navbar = () => {
     <>
       <nav className="bg-[#F5F7FA] ">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center py-4 font-poppins">
-         
           <div className="flex items-center">
             <Link href="/">
               <Image
@@ -70,7 +69,11 @@ const Navbar = () => {
             className="md:hidden flex items-center justify-center"
             onClick={handleMenuToggle}
           >
-            <MdMenu className="text-2xl cursor-pointer" />
+            {open ? (
+              <MdClose className="text-2xl cursor-pointer" />
+            ) : (
+              <MdMenu className="text-2xl cursor-pointer" />
+            )}
           </div>
         </div>
 
